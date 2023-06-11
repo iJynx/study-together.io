@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         display: ["var(--font-sf)", "system-ui", "sans-serif"],
         default: ["var(--font-inter)", "system-ui", "sans-serif"],
+        mono: ['Roboto Mono', 'monospace'],
       },
       animation: {
         // Fade up and down
