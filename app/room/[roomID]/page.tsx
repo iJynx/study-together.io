@@ -26,7 +26,7 @@ function ActiveRoomChip({ members, time }: any) {
             <div className="w-2 h-2 rounded-full bg-green-500"></div>
             <div className="flex gap-1">
                 {members.map((member: any, index: number) => (
-                    <p  key={index} className="text-zinc-200 text-sm">{member}{index !== members.length - 1 && ","}</p>
+                    <p key={index} className="text-zinc-200 text-sm">{member}{index !== members.length - 1 && ","}</p>
                 ))}
             </div>
             <div className="text-zinc-200 text-sm">{time}</div>
@@ -85,10 +85,10 @@ export default async function Page({ params }: any) {
                         <div className='flex flex-col '>
 
                             <span className="text-[3rem] font-extrabol my-auto ml-4 whitespace-nowrap inline-block" key="title">Do I wanna Know?</span>
-                            <span className='text-[1.5rem] my-auto mx-6'>by</span> Arctic Monkeys
-                            <div className='flex -my-1 -'>
-                                <div className='text-[1.5rem] my-auto mx-6'>
-                                    1:21
+                            <div className='flex -my-1 gap-2'>
+                                <span className='text-[1.5rem] my-auto whitespace-nowrap mx-6'>by Arctic Monkeys</span>
+                                <div className='text-[1.5rem] my-auto'>
+                                    1:25
                                 </div>
 
                                 <div className='h-3 w-[400px] bg-gray-300 rounded-lg overflow-none my-auto'>
